@@ -24,7 +24,7 @@ Um sistema simples para gerenciar livros, autores, assuntos e formas de compra. 
 - `frontend/` — Aplicação React
 - `backend/` — API .NET com camadas de aplicação, domínio e infraestrutura
 - `relatorio/` - Relatório de livros
-  `scripts/` - Scripts para criação de tabelas e view
+-  `scripts/` - Scripts para criação de tabelas e view
 
 ## 💻 Como executar o projeto
 
