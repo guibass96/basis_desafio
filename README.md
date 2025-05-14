@@ -12,7 +12,9 @@ Um sistema simples para gerenciar livros, autores, assuntos e formas de compra. 
 - .NET 8
 - MediatR
 - Entity Framework Core
-- 
+
+### Relatório
+- Power BI
 
 ### Banco de Dados:
 - SQL Server
@@ -21,6 +23,7 @@ Um sistema simples para gerenciar livros, autores, assuntos e formas de compra. 
 
 - `frontend/` — Aplicação React
 - `backend/` — API .NET com camadas de aplicação, domínio e infraestrutura
+- `relatorio/` - Relatório de livros
 
 ## 💻 Como executar o projeto
 
