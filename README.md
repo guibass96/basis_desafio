@@ -39,4 +39,4 @@ Um sistema simples para gerenciar livros, autores, assuntos e formas de compra. 
 
 ```bash
 git clone https://github.com/guibass96/basis_desafio
-cd gerenciador-livros
+cd basis-desafio
