@@ -1,0 +1,50 @@
+
+CREATE DATABASE BookManagement;
+GO
+
+USE BookManagement;
+GO
+
+CREATE TABLE Author (
+    AuthorId INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Subject (
+    SubjectId INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Book (
+    BookId INT PRIMARY KEY IDENTITY(1,1),
+    Title NVARCHAR(255) NOT NULL
+);
+
+CREATE TABLE BookPurchaseOptions (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    BookId INT NOT NULL,
+    PurchaseOption NVARCHAR(100) NOT NULL,
+    Price DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (BookId) REFERENCES Book(BookId) ON DELETE CASCADE
+);
+
+CREATE TABLE Book_Author (
+    BookId INT NOT NULL,
+    AuthorId INT NOT NULL,
+    PRIMARY KEY (BookId, AuthorId),
+    FOREIGN KEY (BookId) REFERENCES Book(BookId) ON DELETE CASCADE,
+    FOREIGN KEY (AuthorId) REFERENCES Author(AuthorId) ON DELETE CASCADE
+);
+
+CREATE TABLE Book_Subject (
+    BookId INT NOT NULL,
+    SubjectId INT NOT NULL,
+    PRIMARY KEY (BookId, SubjectId),
+    FOREIGN KEY (BookId) REFERENCES Book(BookId) ON DELETE CASCADE,
+    FOREIGN KEY (SubjectId) REFERENCES Subject(SubjectId) ON DELETE CASCADE
+);
+
+
+
+
+

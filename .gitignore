@@ -1,0 +1,82 @@
+###############
+# .NET Section
+###############
+
+## Build artifacts
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+*.log
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio files
+.vscode/
+.vs/
+.vscode-test/
+
+## Config files
+appsettings.*.json
+*.db
+*.mdf
+*.ldf
+
+## Others
+TestResults/
+packages/
+*.nupkg
+*.snupkg
+*.pidb
+*.psess
+*.vsp
+
+## Rider
+.idea/
+
+################
+# React Section
+################
+
+# Dependencies
+node_modules/
+
+# Production
+/build
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+*.lcov
+
+# Environment variables
+.env
+.env.*.local
+
+# Editor folders
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# IDEs
+*.code-workspace
+
+# Local development
+*.local
+
+#####################
+# OS/System Generated
+#####################
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
